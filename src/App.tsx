@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 
 const github = "https://github.com/roscoe-patnode";
 const linkedin = "https://www.linkedin.com/in/roscoe-patnode/";
-const email = "rpatnode02@gmail.com";
+const email = "RPatnode02@gmail.com";
 const youtube = "https://www.youtube.com/@RoscoePatnode";
 
 
