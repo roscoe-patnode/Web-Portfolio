@@ -1,7 +1,13 @@
 import { Disclosure } from '@headlessui/react'
 import resume from '../assets/Resume_2025_1800.pdf'
 
-function NavigationBar() {
+interface NavBarProps {
+  github: string;
+  linkedin: string;
+  email: string;
+}
+
+function NavigationBar({ github, linkedin, email } : NavBarProps) {
   return (
   <>
     <Disclosure as="nav" className="bg-gradient-to-r from-subheader to-navbg fixed top-0 h-auto w-full">
@@ -11,24 +17,24 @@ function NavigationBar() {
             <div className="flex shrink-0 items-center">
               <svg className="h-14 w-14" viewBox="0 0 135.467 135.467">
                 <path className="fill-main" d="M135.442 67.565a67.965 67.877 0 0 1-67.948 67.877A67.965 67.877 0 0 1-.487 67.598 67.965 67.877 0 0 1 67.428-.312a67.965 67.877 0 0 1 68.014 67.81"/>
-                <path className="fill-pagebg-sec" d="M127.44 67.611a59.825 59.748 0 0 1-59.81 59.748A59.825 59.748 0 0 1 7.79 67.64 59.825 59.748 0 0 1 67.57 7.863a59.825 59.748 0 0 1 59.87 59.69"/>
+                <path className="fill-pagebg" d="M127.44 67.611a59.825 59.748 0 0 1-59.81 59.748A59.825 59.748 0 0 1 7.79 67.64 59.825 59.748 0 0 1 67.57 7.863a59.825 59.748 0 0 1 59.87 59.69"/>
                 <path className="fill-main" d="M18.065 27.54c-.502 0-1.004.517-1.004.931v14.076h26.994c2.409 0 11.842.517 11.842 9.624 0 9.108-8.53 9.522-11.842 9.522H17.061v47.712c0 .414.502.932 1.004.932H31.21c.603 0 1.104-.518 1.104-.932V76.907h8.63l14.652 32.809c.1.31.702.62 1.003.62h14.35c.803 0 1.205-.62.903-1.345C66.835 97.503 61.416 86.118 56.4 74.423c8.028-3.001 14.75-9.625 14.75-22.252 0-24.425-22.578-24.632-27.094-24.632zm57.7 0c-.5 0-1.003.517-1.003.931v14.282h26.995c1.806 0 11.84.518 11.84 9.626 0 9.107-9.833 9.314-11.84 9.314H74.762v47.712c0 .414.502.932 1.004.932H88.81c.703 0 1.004-.518 1.004-.932V77.011h11.942c1.906 0 27.094-.31 27.094-24.632 0-24.322-23.883-24.84-27.094-24.84z" fontFamily="Blanka" fontSize="400"/>
               </svg>
             </div>
           </div>
-          <a href="https://github.com/roscoe-patnode" target="blank_">
+          <a href={github} target="blank_">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 98"
               className="h-8 w-8 fill-current text-main hover:text-hover-main bg-navbg hover:bg-hover-navbg rounded-full">
               <path d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"/>
             </svg>
           </a>
-          <a href="https://www.linkedin.com/in/roscoe-patnode/" target="blank_">
+          <a href={linkedin} target="blank_">
             <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg"
               className="h-8 w-8 fill-current text-navbg hover:text-hover-navbg bg-main hover:bg-hover-main rounded-sm ml-6">
               <path d="M62,62 L51.315625,62 L51.315625,43.8021149 C51.315625,38.8127542 49.4197917,36.0245323 45.4707031,36.0245323 C41.1746094,36.0245323 38.9300781,38.9261103 38.9300781,43.8021149 L38.9300781,62 L28.6333333,62 L28.6333333,27.3333333 L38.9300781,27.3333333 L38.9300781,32.0029283 C38.9300781,32.0029283 42.0260417,26.2742151 49.3825521,26.2742151 C56.7356771,26.2742151 62,30.7644705 62,40.051212 L62,62 Z M16.349349,22.7940133 C12.8420573,22.7940133 10,19.9296567 10,16.3970067 C10,12.8643566 12.8420573,10 16.349349,10 C19.8566406,10 22.6970052,12.8643566 22.6970052,16.3970067 C22.6970052,19.9296567 19.8566406,22.7940133 16.349349,22.7940133 Z M11.0325521,62 L21.769401,62 L21.769401,27.3333333 L11.0325521,27.3333333 L11.0325521,62 Z"/>
             </svg>
           </a>
-          <a href="mailto:rpatnode02@gmail.com" >
+          <a href={"mailto:" + email}>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" 
               className="h-8 w-8 fill-current text-navbg hover:text-hover-navbg bg-main hover:bg-hover-main rounded-full ml-6"
               >
@@ -42,7 +48,7 @@ function NavigationBar() {
             type="button"
             className="bg-main text-navbg rounded-full p-1 text-sm font-semibold hover:bg-hover-main hover:text-hover-navbg border-2 border-main hover:border-hover-main ml-5"
             href={resume} target="_blank">
-            Resume
+            Résumé
           </a>
         </div>
       </div>
