@@ -4,6 +4,12 @@ body {
   margin: 0px 0px;
 }
 
+svg {
+  ellipse {
+    mask: url(#mask);
+  }
+}
+
 @import "tailwindcss";
 
 @theme {

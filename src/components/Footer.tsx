@@ -9,8 +9,8 @@ interface FooterProps {
 
 function Footer({ github, linkedin, email, youtube } : FooterProps) {
   return (
-    <footer className="bg-gradient-to-br to-header from-hover-btnbg h-150 place-content-center">
-      <div className="w-5xl place-self-center flex pb-20">
+    <footer className="bg-gradient-to-br to-header from-hover-btnbg py-45 place-content-center">
+      <div className="max-w-5xl lg:place-self-center lg:flex pb-20 pl-5 lg:pl-0">
         <div className="w-sm mx-auto">
           <div className="w-full text-xl font-bold text-subheader pb-2">Say Hi!</div>
           <div className="w-full text-lg text-pagebg-sec pb-1"><a className="hover:underline"href={linkedin} target="_blank">LinkedIn</a></div>
@@ -28,8 +28,8 @@ function Footer({ github, linkedin, email, youtube } : FooterProps) {
           <div className="w-full text-lg text-pagebg-sec pb-1"><a className="hover:underline"href={resume} target="_blank">Résumé</a></div>
         </div>
       </div>
-      <hr className="pb-10 w-5xl mx-auto text-pagebg-sec"/>
-      <div className="w-5xl mx-auto text-pagebg-sec">© Roscoe Patnode {new Date().getFullYear()}</div>
+      <hr className="pb-10 max-w-5xl mx-auto text-pagebg-sec"/>
+      <div className="max-w-5xl mx-auto text-pagebg-sec pl-5 lg:pl-0">© Roscoe Patnode {new Date().getFullYear()}</div>
     </footer>
   );
 }
