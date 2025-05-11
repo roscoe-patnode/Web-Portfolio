@@ -39,16 +39,16 @@ function NavigationBar({ github, linkedin, email } : NavBarProps) {
               <title>Email me!</title>
               <defs>
                 <clipPath id="a" clipPathUnits="userSpaceOnUse">
-                  <path className="powerclip mix-blend-exclusion" fill="none" stroke-width="4.417" d="M-4.97-4.998h309.94V304.99H-4.97Zm61.16 81.044c-4.55 0-8.278 3.715-8.278 8.26V214.69a8.304 8.304 0 0 0 8.273 8.281H242.45a8.304 8.304 0 0 0 8.273-8.281V84.306c0-4.545-3.728-8.26-8.273-8.26H56.185Zm22.044 19.805L149.3 157.93l71.049-62.078zm155.944 9.885-51.96 45.396 51.96 46.314zm-169.72.053v92.108l52.175-46.518Zm105.208 56.305h.004l-14.942 13.06a8.304 8.304 0 0 1-10.887 0l-14.651-12.8-49.141 43.816h139.05Z"/>
+                  <path className="powerclip mix-blend-exclusion" fill="none" strokeWidth="4.417" d="M-4.97-4.998h309.94V304.99H-4.97Zm61.16 81.044c-4.55 0-8.278 3.715-8.278 8.26V214.69a8.304 8.304 0 0 0 8.273 8.281H242.45a8.304 8.304 0 0 0 8.273-8.281V84.306c0-4.545-3.728-8.26-8.273-8.26H56.185Zm22.044 19.805L149.3 157.93l71.049-62.078zm155.944 9.885-51.96 45.396 51.96 46.314zm-169.72.053v92.108l52.175-46.518Zm105.208 56.305h.004l-14.942 13.06a8.304 8.304 0 0 1-10.887 0l-14.651-12.8-49.141 43.816h139.05Z"/>
                 </clipPath>
               </defs>
-              <path stroke-width=".952" d="M299.494 149.996A149.494 149.518 0 0 1 150 299.514 149.494 149.518 0 0 1 .506 149.996 149.494 149.518 0 0 1 150 .478a149.494 149.518 0 0 1 149.494 149.518Z" clip-path="url(#a)"/>
+              <path strokeWidth=".952" d="M299.494 149.996A149.494 149.518 0 0 1 150 299.514 149.494 149.518 0 0 1 .506 149.996 149.494 149.518 0 0 1 150 .478a149.494 149.518 0 0 1 149.494 149.518Z" clipPath="url(#a)"/>
             </svg>
 
           </a>
           <a
             type="button"
-            className="bg-main text-navbg rounded-full p-1 text-sm font-semibold hover:bg-hover-main hover:text-hover-navbg border-2 border-main hover:border-hover-main ml-5"
+            className="bg-main text-navbg rounded-full p-1 text-sm font-semibold font-inter hover:bg-hover-main hover:text-hover-navbg border-2 border-main hover:border-hover-main ml-5"
             href={resume} target="_blank">
             Résumé
           </a>

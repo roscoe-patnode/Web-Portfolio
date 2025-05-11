@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Exa:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
 body {
   background-color: #F4F4F4;
   width: auto;
@@ -22,4 +24,10 @@ body {
   --color-btntxt: #00a1da;
   --color-hover-btnbg: #7fdeff;
   --color-hover-btntxt: #0083b1;
+
+  --font-lexend-exa: "Lexend Exa", sans-serif;
+  --font-lora: "Lora", serif;
+  --font-inter: "Inter", sans-serif;
+  --font-familjen: "Familjen+Grotesk", sans-serif;
+  --font-almarai: "Almarai", sans-serif;
 }
