@@ -11,7 +11,7 @@ interface CTAProps {
 const client = generateClient<Schema>();
 
 function CallToAct({ helpEmail } : CTAProps) {
-  let [isOpen, setIsOpen] = useState(true);
+  let [isOpen, setIsOpen] = useState(false);
   let [messageSuccess, setSuccess] = useState(false);
 
   function close() {
