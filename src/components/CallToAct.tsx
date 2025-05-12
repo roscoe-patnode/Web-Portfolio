@@ -67,7 +67,7 @@ function CallToAct({ helpEmail } : CTAProps) {
           <hr className="text-subheader rounded-sm border-1"/>
         </div>
         <div className="text-center pt-10">
-          <button type="submit" className="hover:cursor-pointer bg-btnbg font-bold font-inter py-2 px-5 text-btntxt hover:bg-hover-btnbg hover:text-hover-btntxt rounded-full">Send</button>
+          <button type="submit" className="hover:cursor-pointer bg-btnbg font-bold font-inter py-2 px-5 text-btntxt text-lg hover:bg-hover-btnbg hover:text-hover-btntxt rounded-full">Send</button>
         </div>
       </form>
       <Dialog open={isOpen} onClose={close}>
