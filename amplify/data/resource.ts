@@ -13,7 +13,7 @@ const schema = a.schema({
       email: a.string(),
       message_content: a.string(),
     })
-    .authorization((allow) => [allow.guest()]),
+    .authorization((allow) => [allow.guest().to(['create'])]),
 });
 
 export type Schema = ClientSchema<typeof schema>;

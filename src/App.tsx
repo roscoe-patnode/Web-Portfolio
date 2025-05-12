@@ -6,8 +6,9 @@ import Footer from "./components/Footer";
 
 const github = "https://github.com/roscoe-patnode";
 const linkedin = "https://www.linkedin.com/in/roscoe-patnode/";
-const email = "RPatnode02@gmail.com";
+const email = "inquiry@roscoe.dev";
 const youtube = "https://www.youtube.com/@RoscoePatnode";
+const helpEmail = "Help@roscoe.dev";
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
       />
       <Introduction />
       <ProjectList />
-      <CallToAct />
+      <CallToAct helpEmail={helpEmail}/>
       <Footer 
         github={github}
         linkedin={linkedin}

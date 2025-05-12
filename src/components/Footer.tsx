@@ -9,7 +9,7 @@ interface FooterProps {
 
 function Footer({ github, linkedin, email, youtube } : FooterProps) {
   return (
-    <footer className="bg-gradient-to-br to-header from-hover-btnbg py-45 place-content-center">
+    <footer className="bg-gradient-to-br to-header from-hover-btnbg py-45">
       <div className="max-w-5xl lg:place-self-center lg:flex pb-20 pl-5 lg:pl-0">
         <div className="w-sm mx-auto">
           <div className="font-lexend-exa w-full text-xl font-extrabold text-subheader pb-2">Say Hi!</div>
