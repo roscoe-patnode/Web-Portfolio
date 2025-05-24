@@ -74,10 +74,10 @@ function CallToAct({ helpEmail } : CTAProps) {
         <div className="fixed inset-0 flex w-full items-center justify-center overflow-y-auto">
           <DialogPanel transition className="max-w-xl space-y-4 bg-main/60 backdrop-blur-sm duration-300 ease-out p-8 rounded-4xl">
             <DialogTitle className="font-almarai text-hover-btnbg text-2xl font-extrabold">{messageSuccess ? "Message Sent" : "Message Error"}</DialogTitle>
-            <Description className="font-semibold text-pagebg text-lg font-inter">{messageSuccess ? "The message is succussfully be sent!" : "There was a problem sending the message."}</Description>
+            <Description className="font-semibold text-pagebg text-lg font-inter">{messageSuccess ? "The message has succussfully been sent!" : "There was a problem sending the message."}</Description>
             <p className="font-inter text-gray-300 font-semibold">{messageSuccess ?
               "Thank you for your message, I will respond shortly. I look forward to discussing our work together!" : 
-              "We were unable to send the message, if the problem persists please contact me directly at " + helpEmail + "."}
+              "We were unable to send the message, if the problem persists please contact me directly at "} {!messageSuccess && <a href={"mailto:" + helpEmail} target="_blank" className="text-btnbg hover:text-hover-btnbg underline">{helpEmail}</a>}
             </p>
             <div className="flex gap-4 pt-4 place-content-center">
               <button className="hover:cursor-pointer bg-hover-main font-bold font-inter py-2 px-5 text-hover-navbg hover:bg-main hover:text-navbg rounded-full" onClick={close}>Okay</button>
