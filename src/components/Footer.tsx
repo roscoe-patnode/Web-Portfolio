@@ -1,4 +1,4 @@
-import resume from "../assets/Resume_2025_1800.pdf"
+import resume from '../assets/RoscoePatnode_Resume2025.pdf'
 
 interface FooterProps {
   github: string;
