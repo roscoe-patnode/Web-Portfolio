@@ -114,17 +114,15 @@ function App() {
         linkedin={linkedin}
         email={email}
       />
-      <div className="mt-20">
-        <Introduction/>
-        <ProjectList projectInfo={projectInfo}/>
-        <CallToAct helpEmail={helpEmail}/>
-        <Footer 
-          github={github}
-          linkedin={linkedin}
-          email={email}
-          youtube={youtube}
-        />
-      </div>
+      <Introduction/>
+      <ProjectList projectInfo={projectInfo}/>
+      <CallToAct helpEmail={helpEmail}/>
+      <Footer 
+        github={github}
+        linkedin={linkedin}
+        email={email}
+        youtube={youtube}
+      />
     </>
   );
 }
