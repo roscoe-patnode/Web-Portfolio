@@ -61,7 +61,7 @@ const projectInfo = [
     description:
     <div className="font-inter">
       I developed this Portfolio Website using 
-      <span className="text-highlight font-semibold"> React.js</span>,
+      <span className="text-highlight font-semibold"> React</span>,
       <span className="text-highlight font-semibold"> Tailwind</span>,
       and 
       <span className="text-highlight font-semibold"> Node.js</span>. 
