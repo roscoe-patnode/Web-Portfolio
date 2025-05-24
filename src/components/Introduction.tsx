@@ -6,7 +6,7 @@ function Introduction() {
           <div className="font-lexend-exa text-5xl text-header font-semibold pb-4 pt-8">Roscoe Patnode</div>
           <div className="font-inter pl-5">
             Hello, I'm Roscoe! I graduated from Central Washington University with a Bachelor's Degree in Computer Science with a GPA of 3.78.
-            During my studies, I developed a strong understanding of the foundation and principles of software development as well as focused interests in
+            During my studies, I gained a strong foundation of software development principles as well as focused interests in
             <span className="text-highlight font-semibold"> Machine Learning</span>,
             <span className="text-highlight font-semibold"> Database Design</span>, and
             <span className="text-highlight font-semibold"> Data Science</span>. These subjects challenged me and sparked my curiosity and I would like to learn more about these topics.
