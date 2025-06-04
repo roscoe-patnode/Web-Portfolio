@@ -9,7 +9,7 @@ interface NavBarProps {
 function NavigationBar({ github, linkedin, email } : NavBarProps) {
   return (
   <>
-    <nav className="bg-gradient-to-r from-subheader to-navbg sticky top-0 h-auto w-full z-10">
+    <nav className="bg-gradient-to-r from-subheader to-navbg sticky top-0 h-auto w-full z-10 before:absolute before:top-[-100vh] before:left-0 before:right-0 before:h-[100vh] before:bg-gradient-to-r before:from-subheader before:to-navbg">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-18 items-center justify-between">
           <div className="flex flex-1 items-center sm:items-stretch justify-start">

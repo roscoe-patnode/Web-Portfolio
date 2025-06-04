@@ -1,12 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Exa:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@tailwind utilities;
 
 body {
   background-color: #F4F4F4;
   width: auto;
   margin: 0px 0px;
+  scrollbar-gutter: stable;
+  @apply max-w-screen overflow-x-hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 @import "tailwindcss";
+
 
 @theme {
   --color-main: #2C2A4A;
