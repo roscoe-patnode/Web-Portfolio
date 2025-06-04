@@ -18,7 +18,10 @@ function Introduction() {
             I took a Machine Learning class at CWU where I learned about models such a
             <span className="text-highlight font-semibold"> Multi-Layer Perceptron</span> (MLP) and
             <span className="text-highlight font-semibold"> Genetic Algorithms</span> (GA) and worked with a group to program and implement these models.
-            I believe that the use of Machine Learning has only begun and the integration of the technology will continue to increase and best practices will evolve with it to ensure ethical execution.
+            I have also started to train machine learning models for coding tasks by developing a code base with 
+            <span className="text-highlight font-semibold"> Docker</span> and providing a prompt to create, change, or fix part of the project.
+            I then write a list of criteria the response should include an evaluate the quality of the response given by the model according to the criteria.
+            I also compare the response of a model to the response of another model to see which one is better.
           </div>
         </div>
         <div className="max-w-md pl-10 sm:pl-0">
