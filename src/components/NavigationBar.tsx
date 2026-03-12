@@ -1,4 +1,4 @@
-import resume from '../assets/RoscoePatnode_Resume2025.pdf'
+import resume from '../assets/Resume_2026_Dev.pdf'
 
 interface NavBarProps {
   github: string;
