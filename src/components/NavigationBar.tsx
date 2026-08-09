@@ -1,5 +1,3 @@
-import resume from '../assets/Resume_2026_Dev.pdf'
-
 interface NavBarProps {
   github: string;
   linkedin: string;
@@ -44,12 +42,6 @@ function NavigationBar({ github, linkedin, email } : NavBarProps) {
               <path stroke-width=".952" d="M299.494 149.996A149.494 149.518 0 0 1 150 299.514 149.494 149.518 0 0 1 .506 149.996 149.494 149.518 0 0 1 150 .478a149.494 149.518 0 0 1 149.494 149.518Z" clip-path="url(#a)"/>
             </svg>
 
-          </a>
-          <a
-            type="button"
-            className="bg-main text-navbg rounded-full p-1 text-sm font-semibold hover:bg-hover-main hover:text-hover-navbg border-2 border-main hover:border-hover-main ml-5"
-            href={resume} target="_blank">
-            Résumé
           </a>
         </div>
       </div>

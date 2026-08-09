@@ -103,6 +103,23 @@ const projectInfo = [
       <path className="fill-hover-main" fillRule="evenodd" d="M21 20c-2.197 0-4 1.803-4 4 0 1.097.449 2.095 1.172 2.82C16.257 28.015 15 30.38 15 33a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1 1 1 0 0 0-1-1h-2.836c.392-2.324 1.989-4 3.836-4 1.847 0 3.444 1.676 3.836 4H24a1 1 0 0 0-1 1 1 1 0 0 0 1 1h2a1 1 0 0 0 1-1c0-2.621-1.257-4.985-3.172-6.18A3.988 3.988 0 0 0 25 24c0-2.197-1.803-4-4-4zm0 2c1.116 0 2 .884 2 2s-.884 2-2 2-2-.884-2-2 .884-2 2-2z" color="#000"/>
     </svg>,
     link: "https://github.com/roscoe-patnode/Web-Portfolio"
+  },
+  {
+    title: "OasisLedger",
+    description:
+    <div className="font-inter">
+      My main motivation with this project was to be able to efficiently keep track of my personal finances without having trusting any third parties with my financial information.
+      To improve on tracking finances with a spreadsheet, I used the Python library <span className="text-highlight font-semibold">pandas</span> to parse financial statements and then store the data in a <span className="text-highlight font-semibold">PostgreSQL</span> database, which I use to summarize the status of the accounts and generate interactive graphs with <span className="text-highlight font-semibold">plotly</span>.
+      In order to prioritize privacy I store the database using <span className="text-highlight font-semibold">TrueNAS</span> on a computer I got from a surplus warehouse sale at CWU and query the database.
+      For the UI I used <span className="text-highlight font-semibold">Flask</span> that routes HTTP requests, <span className="text-highlight font-semibold">Jinja</span> which allows dynamically render HTML from templates, and <span className="text-highlight font-semibold">Bootstrap</span> handling the styling. I chose these so I could familiarize myself with alternatives to what I have used before in other web app projects.
+    </div>,
+    svg:
+    <svg className="w-35 h-35 md:place-self-center mx-auto" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 32 32">
+      <rect x="6" y="3" width="21" height="25" className="fill-hover-btnbg" />
+      <path className="fill-project" d="M12 8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1h-8Z"/>
+      <path className="fill-subheader" d="M4 3a2 2 0 0 1 2-2h21a2 2 0 0 1 2 2v25a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-3.26A3.247 3.247 0 0 1 2.5 22c0-1.078.525-2.034 1.333-2.625A3.246 3.246 0 0 1 2.5 16.75c0-1.078.525-2.034 1.333-2.625A3.246 3.246 0 0 1 2.5 11.5c0-1.078.525-2.034 1.333-2.625A3.246 3.246 0 0 1 2.5 6.25A3.25 3.25 0 0 1 4 3.51V3Zm2 17.268V25h21V3H6v.01c.223.016.44.056.649.116c.202-.025.545.137.91.424A3.248 3.248 0 0 1 8.99 6H9a.75.75 0 0 1-1.5 0h-.018A1.751 1.751 0 0 0 6 4.518v3.741c.223.017.44.057.649.117c.202-.025.545.137.91.424a3.248 3.248 0 0 1 1.432 2.45H9a.75.75 0 0 1-1.5 0h-.018A1.751 1.751 0 0 0 6 9.768v3.741c.223.018.44.057.649.117c.202-.024.545.136.91.424A3.248 3.248 0 0 1 8.99 16.5H9a.75.75 0 0 1-1.5 0h-.018A1.751 1.751 0 0 0 6 15.018v3.741c.223.017.44.057.649.117c.202-.024.545.136.91.423A3.248 3.248 0 0 1 8.99 21.75H9a.75.75 0 0 1-1.5 0h-.018A1.751 1.751 0 0 0 6 20.268ZM6 27v1h21v-1H6Z"/>
+    </svg>,
+    link: "disabled"
   }
 ];
 
