@@ -17,10 +17,12 @@ function CallToAct({ helpEmail } : CTAProps) {
     setSuccess(false);
   }
 
-  const createMessage = async(formData:FormData) => {
+  // const createMessage = async(formData:FormData) => {
+
+  // }
+  const createMessage = async() => {
 
   }
-
 
   useEffect(() => {
     if (isOpen) {
