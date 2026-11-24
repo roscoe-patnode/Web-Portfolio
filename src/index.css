@@ -17,6 +17,18 @@ html {
 @import "tailwindcss";
 
 
+@font-face {
+  font-family: decterm;
+  src: url('/src/assets/fonts/_decterm.woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: termf4;
+  src: url('/src/assets/fonts/Terminal_F4.woff2');
+  font-display: swap;
+}
+
 @theme {
   --color-main: #2C2A4A;
   --color-navbg: #ADAFD2;
@@ -39,4 +51,11 @@ html {
   --font-inter: "Inter", sans-serif;
   --font-familjen: "Familjen+Grotesk", sans-serif;
   --font-almarai: "Almarai", sans-serif;
+  --font-decterm: "decterm", sans-serif;
+  --font-termf4: "termf4", sans-serif;
+
+  --animate-blink: blink 1s steps(1) infinite;
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
 }

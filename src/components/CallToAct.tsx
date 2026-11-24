@@ -1,6 +1,4 @@
 import { Textarea } from "@headlessui/react";
-import type { Schema } from '../../amplify/data/resource'
-import { generateClient } from "aws-amplify/data";
 import { Dialog, DialogPanel, DialogTitle, Description } from "@headlessui/react";
 import { useState, useEffect } from "react";
 
@@ -8,7 +6,7 @@ interface CTAProps {
   helpEmail: string;
 }
 
-const client = generateClient<Schema>();
+// const client = generateClient<Schema>();
 
 function CallToAct({ helpEmail } : CTAProps) {
   let [isOpen, setIsOpen] = useState(false);
@@ -20,18 +18,7 @@ function CallToAct({ helpEmail } : CTAProps) {
   }
 
   const createMessage = async(formData:FormData) => {
-    try {
-      await client.models.messages.create({
-        name: formData.get("name")?.toString(),
-        email: formData.get("email")?.toString(),
-        message_content: formData.get("message_content")?.toString(),
-      })
-      setSuccess(true);
-    } catch (error) {
-      console.error(error);
-      setSuccess(false);
-    }
-    setIsOpen(true);
+
   }
 
 

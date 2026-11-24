@@ -2,10 +2,9 @@ interface FooterProps {
   github: string;
   linkedin: string;
   email: string;
-  youtube: string;
 }
 
-function Footer({ github, linkedin, email, youtube } : FooterProps) {
+function Footer({ github, linkedin, email } : FooterProps) {
   return (
     <footer className="relative bg-gradient-to-br from-hover-btnbg to-header py-12">
       <div className="max-w-5xl lg:place-self-center lg:flex pb-20 sm:pl-5 lg:pl-0">
@@ -22,7 +21,6 @@ function Footer({ github, linkedin, email, youtube } : FooterProps) {
         <div className="w-sm mx-auto">
           <div className="font-lexend-exa w-auto text-xl font-extrabold text-subheader pb-2">Other</div>
           <div className="font-inter w-full text-lg text-pagebg-sec pb-1"><a className="hover:underline" href={github} target="_blank">GitHub</a></div>
-          <div className="font-inter w-full text-lg text-pagebg-sec pb-1"><a className="hover:underline" href={youtube} target="_blank">YouTube</a></div>
         </div>
       </div>
       <hr className="pb-10 max-w-5xl mx-auto text-pagebg-sec"/>

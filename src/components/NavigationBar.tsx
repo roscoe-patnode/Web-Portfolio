@@ -41,7 +41,6 @@ function NavigationBar({ github, linkedin, email } : NavBarProps) {
               </defs>
               <path stroke-width=".952" d="M299.494 149.996A149.494 149.518 0 0 1 150 299.514 149.494 149.518 0 0 1 .506 149.996 149.494 149.518 0 0 1 150 .478a149.494 149.518 0 0 1 149.494 149.518Z" clip-path="url(#a)"/>
             </svg>
-
           </a>
         </div>
       </div>

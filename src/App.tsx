@@ -1,13 +1,13 @@
 import Introduction from "./components/Introduction";
 import NavigationBar from "./components/NavigationBar";
 import ProjectList from "./components/ProjectList";
+import Body from "./components/Body"
 import CallToAct from "./components/CallToAct";
 import Footer from "./components/Footer";
 
 const github = "https://github.com/roscoe-patnode";
 const linkedin = "https://www.linkedin.com/in/roscoe-patnode/";
 const email = "inquiry@roscoe.dev";
-const youtube = "https://www.youtube.com/@RoscoePatnode";
 const helpEmail = "help@roscoe.dev";
 
 
@@ -132,13 +132,12 @@ function App() {
         email={email}
       />
       <Introduction/>
-      <ProjectList projectInfo={projectInfo}/>
+      <Body/>
       <CallToAct helpEmail={helpEmail}/>
       <Footer 
         github={github}
         linkedin={linkedin}
         email={email}
-        youtube={youtube}
       />
     </>
   );
